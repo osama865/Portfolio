@@ -9,17 +9,19 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" /> -->
     <link rel="stylesheet" href="./default.css" />
     <link rel="stylesheet" type="text/css" href="" id="theme-style" />
-    <script
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
       integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <title>Protfolio</title>
   </head>
   <!-- Header section -->
 
   <body>
-    <section class="s1">
+    <section class="s1" data-aos="slide-up">
       <div class="main-container">
         <div class="greeting-wrapper">
           <h1>Hi , I'm Osama</h1>
@@ -69,7 +71,7 @@
     </section>
 
     <!-- About -->
-    <section class="s2">
+    <section class="s2" data-aos="flip-down">
       <div class="main-container">
         <div class="about-wrapper">
           <div class="about-me">
@@ -119,7 +121,7 @@
       </div>
     </section>
 
-    <section class="s1">
+    <section class="s1" data-aos="slide-right">
       <div class="main-container">
         <h3 style="text-align: center">Some of My Projects</h3>
         <div class="post-wrapper">
@@ -159,10 +161,10 @@
       </div>
     </section>
 
-    <section class="s2">
+    <section class="s2" data-aos="slide-left">
       <div class="main-container">
         <div>
-          <h3>Get in touch</h3>
+          <h3 class="fix">Get in touch</h3>
 
           <form id="contact-form">
             <label>Name</label>
@@ -184,5 +186,12 @@
     </section>
 
     <script type="text/javascript" src="personalizeTheme.js"></script>
+    <script>
+      AOS.init({
+        offset: 400, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
+      });
+    </script>
   </body>
 </html>

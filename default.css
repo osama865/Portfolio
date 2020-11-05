@@ -33,6 +33,9 @@ strong {
   font-family: "Indie Flower", cursive;
   /* font-family: 'Roboto', sans-serif; */
 }
+.fix {
+  padding: auto;
+}
 
 a {
   text-decoration: none;
