@@ -1,5 +1,5 @@
 :root {
-  --mainText: rgb(47, 14, 47);
+  --mainText: black;
   --secondaryText: rgb(42, 40, 40);
 
   --borderColor: #ccc8c8;
@@ -8,7 +8,7 @@
 
   --themeDotBorder: black;
   --previewBg: rgb(251, 249, 243, 0.8);
-  --preveiwShadow: #a8a8a8;
+  --previewShadow: #a8a8a8;
   --btnColor: black;
 }
 
@@ -17,6 +17,9 @@ body {
   padding: 0;
   margin: 0;
 }
+body * {
+  transition: 0.3s;
+}
 
 h1,
 h2,
@@ -24,6 +27,7 @@ h3,
 h4,
 h5,
 h6,
+label,
 strong {
   color: var(--mainText);
   font-family: "Indie Flower", cursive;
@@ -117,6 +121,10 @@ ul {
   background-color: green;
 }
 
+#navigation a {
+  color: var(--mainText);
+}
+
 #navigation {
   margin: 0;
   padding: 10px;
@@ -163,19 +171,19 @@ ul {
 }
 
 #light-mode {
-  background-color: rgb(220, 221, 221);
-}
-
-#green-mode {
-  background-color: rgb(61, 173, 39);
-}
-
-#purple-mode {
-  background-color: rgb(91, 30, 104);
+  background-color: #fff;
 }
 
 #blue-mode {
   background-color: #192734;
+}
+
+#green-mode {
+  background-color: #78866b;
+}
+
+#purple-mode {
+  background-color: #7e4c74;
 }
 
 #settings-note {
@@ -185,7 +193,7 @@ ul {
 }
 
 #preview-shadow {
-  background-color: var(--preveiwShadow);
+  background-color: var(--previewShadow);
   max-width: 300px;
   height: 150px;
   padding-left: 30px;
@@ -242,7 +250,7 @@ ul {
 #skills {
   display: flex;
   justify-content: space-evenly;
-  background-color: var(--preveiwShadow);
+  background-color: var(--previewShadow);
 }
 
 #social_img {
@@ -360,6 +368,8 @@ li,
 span,
 input,
 textarea {
+  color: var(--secondaryText);
+  font-family: "Roboto Mono", monospace;
 }
 
 .s1 {

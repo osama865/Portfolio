@@ -8,6 +8,7 @@
 
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" /> -->
     <link rel="stylesheet" href="./default.css" />
+    <link rel="stylesheet" type="text/css" href="" id="theme-style" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
       integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
@@ -40,10 +41,10 @@
             <h5 style="text-align: center; line-height: 0">Personalize Theme</h5>
 
             <div id="theme-options-wrapper">
-              <div id="light-mode" class="theme-dot"></div>
-              <div id="blue-mode" class="theme-dot"></div>
-              <div id="green-mode" class="theme-dot"></div>
-              <div id="purple-mode" class="theme-dot"></div>
+              <div data-mode="light" id="light-mode" class="theme-dot"></div>
+              <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+              <div data-mode="green" id="green-mode" class="theme-dot"></div>
+              <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
             </div>
 
             <p id="settings-note">
@@ -164,16 +165,16 @@
           <h3>Get in touch</h3>
 
           <form id="contact-form">
-            <label for="">Name</label>
+            <label>Name</label>
             <input type="text" class="input-field" type="text" name="name" />
 
-            <label for="">Subject</label>
+            <label>Subject</label>
             <input type="text" class="input-field" type="text" name="subject" />
 
-            <label for="">Email</label>
+            <label>Email</label>
             <input type="text" class="input-field" type="text" name="email" />
 
-            <label for="">Message</label>
+            <label>Message</label>
             <textarea name="message" class="input-field"></textarea>
 
             <input id="submit-btn" type="submit" value="Send" />
@@ -181,5 +182,7 @@
         </div>
       </div>
     </section>
+
+    <script type="text/javascript" src="personalizeTheme.js"></script>
   </body>
 </html>
